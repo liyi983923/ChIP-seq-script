@@ -1,4 +1,4 @@
-#ChIP-Seq pipeline  
+#  ChIP-Seq pipeline  
 对ChIP-Seq其实也不敢说是很了解，还有很多值得我学习和关注的。不仅仅是实验技术和数据分析，就是如何去理解这个实验，如何去利用这些数据去得到更多的结果，也是值得我学习的。
 ##1. 先讲一讲pipeline吧
 以下是2011年Nature Protocol上的一篇[文章](https://www.nature.com/nprot/journal/v7/n1/full/nprot.2011.420.html) 对ChIP-Seq的简介图。

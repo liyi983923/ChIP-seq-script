@@ -1,2 +1,2 @@
 # ChIP-seq-script
-my scripts for ChIP-seq
+it is my scripts for ChIP-seq in this section

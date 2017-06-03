@@ -83,8 +83,8 @@
 	COMMAND="trim_galore --fastqc -o ${outputDIR} ${inputDIR}/${completename}"
 	$COMMAND
 
-    done
-
+    done
+总之，还有很多的东西要继续的学习和跟进。加油了！
 
 
 

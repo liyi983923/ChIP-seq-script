@@ -39,8 +39,8 @@
     
     
 ##3. Data trimming and QC
-    #! /bin/bash
 
+    #! /bin/bash
     ## step4 : run FastQC to check the sequencing quality.
     export input=/home/jimmyli/Desktop/test/ChIP_test/rawdata
     cd $input

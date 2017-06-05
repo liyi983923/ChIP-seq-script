@@ -1,8 +1,8 @@
-#ChIP-Seq pipeline
+# ChIP-Seq pipeline
 对ChIP-Seq其实也不敢说是很了解，还有很多值得我学习和关注的。不仅仅是实验技术和数据分析，就是如何去理解这个实验，如何去利用这些数据去得到更多的结果，也是值得我学习的。
 
 
-##0. overview 先讲一讲ChIP实验
+## 0. overview 先讲一讲ChIP实验
 有关ChIP-Seq的实验过程，每一步都要有小细节啊。我和Dawn一起做过一次ChIP，三天的实验，比较繁琐。下面是一片Genome Research[文章](http://genome.cshlp.org/content/22/9/1813.long)对ChIP-seq的总结。
 > * Cells or tissues are treated with a chemical agent, usually formaldehyde, to cross-link proteins covalently to DNA. This is followed by cell disruption and sonication, or in some cases, enzymatic digestion, to shear the chromatin to a target size of 100-300bp. The protein of interest with its bound DNA is then enriched relative to the starting chromatin by purification with an antiody specific for the factor. Alteratively, cell lines expressing an epitope tagged factor can be generated and the fusion protein immunoprecipitated via the epitope tag.    <BR /> <BR />
 
@@ -14,7 +14,7 @@
 
 另外一个有意思的问题就是**quality assessment**，有机会好好学习这部分。而这个[**blog**](http://www.bio-info-trainee.com/1843.html)对最后data的quality有很好的解析。
 
-##1. 先讲一讲pipeline吧
+## 1. 先讲一讲pipeline吧
 以下是2011年Nature Protocol上的一篇[文章](https://www.nature.com/nprot/journal/v7/n1/full/nprot.2011.420.html) 对ChIP-Seq的简介图。
 
 ![pipeline](https://github.com/liyi983923/figures/raw/master/saved%20fig/nprot.2011.420-F1.jpg)
@@ -29,7 +29,7 @@
 
 
 
-##2. Data Download
+## 2. Data Download
 自己测序拿到的结果是fastq的文档，可以直接用上面写的pipeline进行analysis。但是如果是做数据比较就要去NCBI和EMBO的网站上去download数据了。奇怪的是NCBI上很多数据都是sra格式，确实比较小，但是下载后用samtool去做解压缩很耗时间，所以如果Internet is fast， we can download directly from [ENA](http://www.ebi.ac.uk/ena).   <BR />
 
 下面是我学习的一个例子，用shell写的script如何批量的下载data，参考的是网上的一个[例子](https://github.com/jmzeng1314/NGS-pipeline/tree/master/CHIPseq).  我感觉写的很详细，是一个很好的学习例子，另外一个我是用TSRI的cluster做的，script是从Thomas拿过来修改的。我将详细的比较两种方法和脚本。<br />
@@ -52,7 +52,7 @@
  <BR /> 
     
     
-##3. Data trimming and QC
+## 3. Data trimming and QC
     #! /bin/bash
 
     ## step4 : run FastQC to check the sequencing quality.
